@@ -1,0 +1,160 @@
+.headerLogo {
+    height: 1rem;
+    width: 1rem;
+}
+
+.header-Main-Div {
+    width: 100vw;
+}
+
+.header-Top-Div {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.header-top-left-Div {
+    display: flex;
+    gap: 2rem;
+}
+
+.mail-div {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.ashish-Mail {
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.mail-div:hover .ashish-Mail,
+.mail-div:hover svg {
+    color: #1C75BC;
+    fill: #1C75BC;
+    cursor: pointer;
+}
+
+.time-div {
+    display: flex;
+    gap: .5rem;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+}
+.time-div p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.time-svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+
+/* Social Media Icon Containers */
+.header-top-right-Div {
+    display: flex;
+    gap: 1rem;
+}
+
+.facebook-svg-div, .twitter-svg-div, .indeed-svg-div {
+    display: flex;
+    height: 2rem;
+    width: 2rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, fill 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for Facebook */
+.facebook-svg-div:hover {
+    background-color: #3B5A9A;
+}
+
+.facebook-fontAwesome , .twitter-fontAwesome , .linkedin-fontAwesome{
+    color: rgb(118, 118, 118);
+}
+.facebook-fontAwesome:hover{
+    fill: white !important;
+    cursor: pointer;
+}
+
+/* Hover effect for Twitter */
+.twitter-svg-div:hover {
+    background-color: #1DA1F2;
+    cursor: pointer;
+}
+
+.twitter-fontAwesome:hover{
+    color: white !important; 
+    cursor: pointer;
+}
+
+/* Hover effect for Indeed */
+.indeed-svg-div:hover {
+    background-color: #0A66C2;
+}
+
+.indeed-svg-div:hover .indeed-fontAwesome {
+    color: white; /* Use color property to change icon color */
+}
+
+/* Logo and bottom section */
+.logo-Div {
+    width: 20vw;
+    height: 20vh;
+}
+
+.header-Bottom-Div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-Bottom-right-div {
+    display: flex;
+}
+
+.header-Bottom-inner-list-Ul {
+    display: flex;
+    gap: 1rem;
+}
+
+.logo-png {
+    aspect-ratio: 9 / 12;
+    height: 90%;
+    width: 50%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.linkedin-fontAwesome:hover{
+    cursor: pointer;
+}
+
+
+.facebook-svg-div:hover .facebook-fontAwesome {
+    color: white; 
+}
+.twitter-svg-div:hover .twitter-fontAwesome {
+    color: white; 
+}
+.indeed-svg-div:hover .linkedin-fontAwesome {
+    color: white; 
+}
