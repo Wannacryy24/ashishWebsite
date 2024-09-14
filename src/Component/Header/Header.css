@@ -1,6 +1,7 @@
 .headerLogo {
     height: 1rem;
     width: 1rem;
+    
 }
 
 .header-Main-Div {
@@ -10,7 +11,8 @@
 .header-Top-Div {
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 1rem 1rem .2rem 1rem;
+    box-shadow: rgba(158, 157, 157, 0.2) 0px 2px 8px 0px;
 }
 
 .header-top-left-Div {
@@ -107,47 +109,43 @@
 /* Logo and bottom section */
 .logo-Div {
     width: 20vw;
-    height: 20vh;
+    /* height: 20vh; */
 }
 
 .header-Bottom-Div {
     display: flex;
     justify-content: space-between;
+    padding: 1rem;
 }
 
 .header-Bottom-right-div {
     display: flex;
+    gap: 2rem;
 }
 
 .header-Bottom-inner-list-Ul {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
+    font-weight: 600;
+}
+
+.header-Bottom-inner-list-Div , .header-Bottom-inner-ContactUs-Button-Div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo-png {
-    aspect-ratio: 9 / 12;
-    height: 90%;
-    width: 50%;
-    max-width: 100%;
-    max-height: 100%;
+    /* aspect-ratio: 8 / 12; */
+    height: 8rem;
+    width: 6rem;
+    max-width: 90%;
+    max-height: 90%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .linkedin-fontAwesome:hover{
     cursor: pointer;
 }
-
 
 .facebook-svg-div:hover .facebook-fontAwesome {
     color: white; 
@@ -157,4 +155,36 @@
 }
 .indeed-svg-div:hover .linkedin-fontAwesome {
     color: white; 
+}
+
+/* Ensure the container for the button does not expand more than needed */
+.header-Bottom-inner-ContactUs-Button-Div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto; /* or a specific value like 100px if needed */
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the button itself */
+.header-Bottom-inner-ContactUs-Button {
+    background-color: white;
+    color: #007bff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    cursor: pointer;
+    /* Ensure button does not exceed the container width */
+    max-width: 100%;
+    border: .1rem solid;
+}
+
+.header-Bottom-inner-ContactUs-Button:hover{
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    transition: background-color .5s ease, fill 0.3s ease; /* Smooth transition */
+    /* border: solid; */
 }
