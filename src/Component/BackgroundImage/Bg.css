@@ -1,0 +1,101 @@
+.background-image-wrapper {
+    position: relative;
+    height: 65vh; 
+    width: 100vw; 
+    background-image: url(https://www.ishicoindia.com/upload_images/banner/1695313250r.png);
+    background-position: center right;
+    background-size: cover;
+    animation: zoomInOut 20s ease-in-out infinite;
+    overflow: hidden; 
+}
+
+@keyframes zoomInOut {
+    0% {
+        background-size: 100%; 
+    }
+    50% {
+        background-size: 120%; 
+    }
+    100% {
+        background-size: 100%; 
+    }
+}
+
+
+.rotating-Div{
+    position:absolute;
+    height: 200vh;
+    width:800px;
+    background-color: white;
+    rotate: 50deg;
+    border-radius: 2rem;    
+    top: -22vw;
+    left: -25vw;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.welcone-details-div{
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    color: black;
+    width: 30vw;
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+
+.welcome-h3{
+    color: #969696;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.welcome-h2{
+    letter-spacing: 0.1px;
+    width: 45vw;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 50px;
+    margin-top: -5vh;   
+}
+
+
+.welcome-get-stareted-button{
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.8em 1.3em 0.8em 0.9em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 16px;
+    width: fit-content;
+}
+
+.welcome-get-stareted-button svg {
+    margin-right: 3px;
+    transform: rotate(30deg);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+  .welcome-get-stareted-button span {
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+  }
+  
+.welcome-get-stareted-button:hover svg {
+    transform: translateX(5px) rotate(90deg);
+  }
+  
+.welcome-get-stareted-button:hover span {
+    transform: translateX(7px);
+  }
+  
